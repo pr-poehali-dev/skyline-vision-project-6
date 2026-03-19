@@ -29,7 +29,7 @@ const galleryItems = [
   },
   {
     id: 3,
-    image: "/images/dscf3938.jpeg",
+    image: "https://cdn.poehali.dev/projects/df5a5e78-057d-443d-8a9e-788ce7236a64/bucket/0e3a539a-6cfc-4562-be3b-cba4a860f3d8.jpg",
     title: "Рельеф",
     material: "Смешанная техника",
     size: "80×100",
