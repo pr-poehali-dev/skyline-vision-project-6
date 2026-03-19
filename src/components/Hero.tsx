@@ -30,9 +30,9 @@ export default function Hero({ language }: HeroProps) {
     <section id="hero" className="relative pt-40 pb-32 md:pt-56 md:pb-48 overflow-hidden min-h-screen flex items-center">
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/dscf3797.jpeg"
+          src="https://cdn.poehali.dev/projects/df5a5e78-057d-443d-8a9e-788ce7236a64/bucket/816c6f1d-8a34-4d69-b7fc-2f93b89ff539.JPG"
           alt="Анна Нестерова в мастерской"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-top"
         />
         <div className="absolute inset-0 bg-charcoal/40"></div>
       </div>
