@@ -13,11 +13,11 @@ const translations = {
 const galleryItems = [
   {
     id: 1,
-    image: "/images/dscf3862.jpeg",
-    title: "Без названия",
+    image: "https://cdn.poehali.dev/projects/df5a5e78-057d-443d-8a9e-788ce7236a64/bucket/6963c56f-1d25-4483-b96f-2e69bda7aa0d.jpg",
+    title: "Развитие",
     material: "Гипс, дерево",
-    size: "60×80",
-    year: "2023",
+    size: "120×120",
+    year: "2025",
   },
   {
     id: 2,
