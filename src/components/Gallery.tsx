@@ -5,119 +5,71 @@ interface GalleryProps {
 }
 
 const translations = {
-  en: {
-    heading: "Gallery",
-  },
-  de: {
-    heading: "Galerie",
-  },
-  ru: {
-    heading: "Галерея",
-  },
+  en: { heading: "Works." },
+  de: { heading: "Werke." },
+  ru: { heading: "Работы." },
 }
 
-const galleryItems = {
-  en: [
-    {
-      id: 1,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3862.JPG-QFjEqVJxprhU4vjLcesRXlZsTk7pRM.jpeg",
-      title: "Archway Portrait",
-    },
-    {
-      id: 2,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3805.JPG-yq7ymSGUhJV4rq9yyyquEOMeXXYLDp.jpeg",
-      title: "Classical Courtyard",
-    },
-    {
-      id: 3,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3938.JPG-OmXjCML5NpcJKstfM3mOWBFPt1HDzH.jpeg",
-      title: "Tunnel Lights",
-    },
-    {
-      id: 4,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3768.JPG-Q3wacl3wQVQUhGT4jgw6Rf3OVCni3R.jpeg",
-      title: "Piano Moment",
-    },
-    {
-      id: 5,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3917.JPG-iPCjoD8pZGUcg5qzfRnrkOrb14tK1E.jpeg",
-      title: "Urban Gallery",
-    },
-  ],
-  de: [
-    {
-      id: 1,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3862.JPG-QFjEqVJxprhU4vjLcesRXlZsTk7pRM.jpeg",
-      title: "Bogenportrat",
-    },
-    {
-      id: 2,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3805.JPG-yq7ymSGUhJV4rq9yyyquEOMeXXYLDp.jpeg",
-      title: "Klassischer Innenhof",
-    },
-    {
-      id: 3,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3938.JPG-OmXjCML5NpcJKstfM3mOWBFPt1HDzH.jpeg",
-      title: "Tunnellichter",
-    },
-    {
-      id: 4,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3768.JPG-Q3wacl3wQVQUhGT4jgw6Rf3OVCni3R.jpeg",
-      title: "Am Klavier",
-    },
-    {
-      id: 5,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3917.JPG-iPCjoD8pZGUcg5qzfRnrkOrb14tK1E.jpeg",
-      title: "Stadtgalerie",
-    },
-  ],
-  ru: [
-    {
-      id: 1,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3862.JPG-QFjEqVJxprhU4vjLcesRXlZsTk7pRM.jpeg",
-      title: "Портрет в арке",
-    },
-    {
-      id: 2,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3805.JPG-yq7ymSGUhJV4rq9yyyquEOMeXXYLDp.jpeg",
-      title: "Классический двор",
-    },
-    {
-      id: 3,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3938.JPG-OmXjCML5NpcJKstfM3mOWBFPt1HDzH.jpeg",
-      title: "Огни туннеля",
-    },
-    {
-      id: 4,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3768.JPG-Q3wacl3wQVQUhGT4jgw6Rf3OVCni3R.jpeg",
-      title: "За роялем",
-    },
-    {
-      id: 5,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSCF3917.JPG-iPCjoD8pZGUcg5qzfRnrkOrb14tK1E.jpeg",
-      title: "Городская галерея",
-    },
-  ],
-}
+const galleryItems = [
+  {
+    id: 1,
+    image: "/images/dscf3862.jpeg",
+    title: "Без названия",
+    material: "Гипс, дерево",
+    size: "60×80",
+    year: "2023",
+  },
+  {
+    id: 2,
+    image: "/images/dscf3805.jpeg",
+    title: "Фактура земли",
+    material: "Акрил, гипс",
+    size: "50×70",
+    year: "2023",
+  },
+  {
+    id: 3,
+    image: "/images/dscf3938.jpeg",
+    title: "Рельеф",
+    material: "Смешанная техника",
+    size: "80×100",
+    year: "2024",
+  },
+  {
+    id: 4,
+    image: "/images/dscf3768.jpeg",
+    title: "Природный слой",
+    material: "Дерево, гипс",
+    size: "40×60",
+    year: "2022",
+  },
+  {
+    id: 5,
+    image: "/images/dscf3917.jpeg",
+    title: "Объём",
+    material: "Акрил, текстура",
+    size: "70×90",
+    year: "2024",
+  },
+]
 
 export default function Gallery({ language }: GalleryProps) {
   const t = translations[language]
-  const items = galleryItems[language]
   const [selectedId, setSelectedId] = useState<number | null>(null)
-  const selectedItem = items.find((item) => item.id === selectedId)
-  const selectedIndex = items.findIndex((item) => item.id === selectedId)
+  const selectedItem = galleryItems.find((item) => item.id === selectedId)
+  const selectedIndex = galleryItems.findIndex((item) => item.id === selectedId)
 
   const goToNext = () => {
     if (selectedId !== null) {
-      const nextIndex = (selectedIndex + 1) % items.length
-      setSelectedId(items[nextIndex].id)
+      const nextIndex = (selectedIndex + 1) % galleryItems.length
+      setSelectedId(galleryItems[nextIndex].id)
     }
   }
 
   const goToPrev = () => {
     if (selectedId !== null) {
-      const prevIndex = (selectedIndex - 1 + items.length) % items.length
-      setSelectedId(items[prevIndex].id)
+      const prevIndex = (selectedIndex - 1 + galleryItems.length) % galleryItems.length
+      setSelectedId(galleryItems[prevIndex].id)
     }
   }
 
@@ -129,22 +81,23 @@ export default function Gallery({ language }: GalleryProps) {
           <div className="line-accent"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-          {items.map((item) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {galleryItems.map((item) => (
             <div
               key={item.id}
               onClick={() => setSelectedId(item.id)}
-              className="group overflow-hidden bg-charcoal/5 cursor-pointer"
+              className="group overflow-hidden bg-charcoal/5 cursor-pointer animate-fade-in-up"
             >
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-80 overflow-hidden">
                 <img
                   src={item.image || "/placeholder.svg"}
                   alt={item.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              <div className="p-4">
-                <small className="text-charcoal/70 font-medium">{item.title}</small>
+              <div className="p-5 border-t border-taupe/20">
+                <p className="text-charcoal font-medium mb-1">{item.title}</p>
+                <small className="text-taupe">{item.material} · {item.size} · {item.year}</small>
               </div>
             </div>
           ))}
@@ -163,10 +116,14 @@ export default function Gallery({ language }: GalleryProps) {
             <img
               src={selectedItem.image || "/placeholder.svg"}
               alt={selectedItem.title}
-              className="max-w-full max-h-full object-contain"
+              className="max-w-full max-h-[80vh] object-contain"
             />
 
-            {/* Close button */}
+            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-center">
+              <p className="text-white font-medium mb-1">{selectedItem.title}</p>
+              <small className="text-white/60">{selectedItem.material} · {selectedItem.size} · {selectedItem.year}</small>
+            </div>
+
             <button
               onClick={() => setSelectedId(null)}
               className="absolute top-6 right-6 text-white hover:text-gold transition-colors"
@@ -177,7 +134,6 @@ export default function Gallery({ language }: GalleryProps) {
               </svg>
             </button>
 
-            {/* Previous button */}
             <button
               onClick={goToPrev}
               className="absolute left-6 top-1/2 -translate-y-1/2 text-white hover:text-gold transition-colors"
@@ -188,7 +144,6 @@ export default function Gallery({ language }: GalleryProps) {
               </svg>
             </button>
 
-            {/* Next button */}
             <button
               onClick={goToNext}
               className="absolute right-6 top-1/2 -translate-y-1/2 text-white hover:text-gold transition-colors"
@@ -199,9 +154,8 @@ export default function Gallery({ language }: GalleryProps) {
               </svg>
             </button>
 
-            {/* Image counter */}
-            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white text-sm">
-              {selectedIndex + 1} / {items.length}
+            <div className="absolute top-6 left-6 text-white/50 text-sm">
+              {selectedIndex + 1} / {galleryItems.length}
             </div>
           </div>
         </div>

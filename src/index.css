@@ -5,11 +5,11 @@
 @layer base {
   :root {
     /* Color Palette */
-    --cream: #f5f1ed;
-    --charcoal: #1a1815;
-    --taupe: #a89f99;
-    --gold: #c9a961;
-    --warm-white: #faf8f5;
+    --cream: #f4f2ef;
+    --charcoal: #2c2b29;
+    --taupe: #9e9690;
+    --gold: #b89a6a;
+    --warm-white: #faf9f7;
 
     /* Design Tokens */
     --background: 30 20% 95%;
@@ -103,15 +103,15 @@
   }
 
   h1 {
-    @apply text-5xl md:text-7xl font-serif font-normal leading-tight;
+    @apply text-5xl md:text-7xl font-sans font-light leading-tight tracking-tight;
   }
 
   h2 {
-    @apply text-4xl md:text-5xl font-serif font-normal leading-tight;
+    @apply text-4xl md:text-5xl font-sans font-light leading-tight tracking-tight;
   }
 
   h3 {
-    @apply text-xl font-serif font-normal;
+    @apply text-xl font-sans font-normal;
   }
 
   p {
